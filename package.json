@@ -1,0 +1,25 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "An easy webb app to sort daily tasks",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarthroedsson/todo.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Oscar Throedsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarthroedsson/todo/issues"
+  },
+  "homepage": "https://github.com/oscarthroedsson/todo#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
