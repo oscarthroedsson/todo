@@ -7,7 +7,7 @@ import { deleteTodo, changeStatus } from "./handleActionOnTodos.js"; // file tha
 
 // Get the base elements
 const form = document.querySelector("#form"); //get the form-element
-const input = document.querySelector("input"); // get the input-field
+const input = document.querySelector("#inputTitel"); // get the input-field
 const listElement = document.querySelector("#todoList"); // Get the list where the un done todos are
 const checkedIDList = document.querySelector("#check-todo"); // get tthe list where the done todos are
 
@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
   inputEl = the input element we got above
   value = get the value of the input element
   */
-  const task = form.inputEl.value; // get the value from the input
+  const task = form.inputTitel.value; // get the value from the input
   const newTodo = createObj(task); // send the task value and creates a new object
   addnewTodo(newTodo); // add thetodo-obj to our list
 

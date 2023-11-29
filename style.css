@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+.inputNotes {
+  width: 30rem;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  margin-block: 5px;
+  width: 40rem;
+
+  border: 1px solid lightgrey;
+  border-radius: 0.1rem 0.2rem 0.2rem 0.1rem;
+  border-left: 2px solid #1cba1c;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  appearance: auto;
+  margin-inline: 3px;
+}

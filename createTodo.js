@@ -10,9 +10,14 @@ function createTodo(obj) {
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
 
+  let btnContainer = document.createElement("div");
   liEl.appendChild(span);
-  liEl.appendChild(checkBtn);
-  liEl.appendChild(deleteBtn);
+  liEl.appendChild(btnContainer);
+  btnContainer.appendChild(checkBtn);
+  btnContainer.appendChild(deleteBtn);
+
+  // liEl.appendChild(checkBtn);
+  // liEl.appendChild(deleteBtn);
 
   return liEl;
 }
