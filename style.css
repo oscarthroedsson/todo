@@ -1,9 +1,19 @@
 * {
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   margin: 0px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: fit-content;
 }
 
 .formInput {
@@ -37,6 +47,49 @@ li {
 }
 
 button {
-  appearance: auto;
   margin-inline: 3px;
+  padding-block: 0.2rem;
+  padding-inline: 0.4rem;
+  border-radius: 0.2rem;
+  border-width: 2px;
+}
+
+li div button:first-child {
+  border: 2px solid #85f184;
+  background-color: transparent;
+}
+li div button:first-child:hover {
+  background-color: #dcfddb;
+}
+
+li div button:nth-child(2) {
+  border: 2px solid #ffc0c0;
+  background-color: transparent;
+}
+li div button:nth-child(2):hover {
+  background-color: #ffdddd;
+}
+
+form > button {
+  border: 2px solid #b3ccff;
+  background-color: transparent;
+}
+
+form > button:hover {
+  background-color: #d5e4ff;
+  color: #10169f;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+input {
+  appearance: auto;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-left: 2px solid grey;
+}
+#inputTitel {
+  margin-top: 0.5rem;
 }

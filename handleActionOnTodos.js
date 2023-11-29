@@ -5,6 +5,7 @@ export function deleteTodo(todoList, index, replaceItem) {
   return todoList;
 }
 export function changeStatus(todo) {
+  console.log("todo: ", todo);
   return { ...todo, complete: !todo.complete };
 }
 

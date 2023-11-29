@@ -84,9 +84,7 @@ I just wanted to use switch for this and i want to have some fun... Try to make 
 */
 
   const btnPressed = e.target.textContent; // get textContent of the button that was pressed
-  console.log("btnPressed:", btnPressed);
-  const parent = e.target.parentNode; //get parent element of the button that was pressed (li n all children)
-  console.log("btnPressed: ", parent);
+  const parent = e.target.parentNode.parentNode; //get parent element of the button that was pressed (li n all children)
   const item = parent.getAttribute("item"); //get item value of the item attribute that identify the li-element
 
   switch (btnPressed) {
@@ -115,7 +113,7 @@ I just wanted to use switch for this and i want to have some fun... Try to make 
 // Listen on the list with completed todos
 checkedIDList.addEventListener("click", (e) => {
   const btnPressed = e.target.textContent; // which btn is pressed
-  const parent = e.target.parentNode;
+  const parent = e.target.parentNode.parentNode;
   const item = parent.getAttribute("item");
 
   switch (btnPressed) {
